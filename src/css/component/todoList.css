@@ -1,0 +1,33 @@
+.todo__Body {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.todo__task,
+.todo__done {
+  height: 100%;
+  width: 48%;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+}
+.todo__list {
+  padding: 24px;
+}
+.todo__list li {
+  margin-left: 24px;
+}
+.todo__task-title,
+.todo__task-title {
+  width: 320px;
+  font-size: var(--medium-font);
+  font-weight: var(--semi-bold-font);
+  border: 1px solid;
+  padding: 14px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}

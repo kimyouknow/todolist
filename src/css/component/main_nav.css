@@ -1,0 +1,65 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav-header {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-nav-header__time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.main-nav-header__date {
+  font-size: var(--largest-font);
+  font-weight: var(--bold-font);
+}
+
+.main-nav-header__search {
+  border: 1px solid;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  padding: 2px 0;
+}
+.main-nav-header__input {
+  border-style: none;
+  width: 80%;
+  height: 40px;
+  font-size: var(--small-font);
+}
+.main-nav-header__input:focus {
+  outline: 0;
+}
+.main-nav__navigation {
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation__todolist,
+.navigation__calendar,
+.navigation__weather {
+  height: 70px;
+  width: 30%;
+  border: 1px solid;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  padding-top: 30px;
+  text-align: center;
+  font-size: var(--medium-font);
+  font-weight: var(--semi-bold-font);
+}
+.navigation__todolist,
+.navigation__calendar,
+.navigation__weather:hover {
+  cursor: pointer;
+}

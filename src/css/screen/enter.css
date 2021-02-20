@@ -1,0 +1,70 @@
+#bg {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.3s linear;
+}
+@keyframes fadeIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+.main-enter {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 30%;
+  background-color: rgba(45, 45, 45, 0.8);
+}
+
+.main-enter__title {
+  text-align: center;
+  font-size: var(--large-font);
+  font-weight: var(--bold-font);
+  margin-bottom: 60px;
+  color: white;
+}
+
+.main-enter__input {
+  width: 40%;
+  height: 60px;
+  font-size: var(--medium-font);
+  font-weight: var(--bold-font);
+  border-radius: 8px;
+  margin-bottom: 24px;
+  padding: 2px;
+}
+.main-enter__submit {
+  cursor: pointer;
+  border-radius: 8px;
+  border-style: none;
+  padding: 12px;
+  font-size: var(--medium-font);
+  background-color: rgba(45, 45, 45, 0.4);
+  color: white;
+}
+#enter__username {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-enter input:focus {
+  outline: 0;
+}

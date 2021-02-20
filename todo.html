@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <div class="localName js-localName">
+        <div class="localName__img">
+            <img src="src/img/profile.jpg" alt="/">
+        </div>
+    </div>
+    <div class="backToHome js-backToHome">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <section class="main-nav">
+        <div class="main-nav-header">
+            <div class="main-nav-header__time">
+                <span class="main-nav-header__date js-dateContainer js-dateContainer"></span>
+            </div>
+            <div class="main-nav-header__search">
+                <i class="fas fa-search"></i>
+                <input class="main-nav-header__input" type="text" placeholder="Google search">
+            </div>
+        </div>
+        <div class="container">
+            <ul class="container__ul">
+                <a href="#">
+                    <div class="container__img">
+                        <img src="https://avatars.githubusercontent.com/u/71386219?s=460&v=4" alt="/">
+                    </div>
+                    <div class="container__img-span">
+                        <span>naver</span>
+                    </div>
+                </a>
+            </ul>
+        </div>
+        <div class="main-nav__navigation js-navigation">
+            <div class="navigation__todolist js-nav__toDo">toDoList</div>
+            <div class="navigation__weather js-nav__weather">weather</div>
+            <div class="navigation__calendar js-nav__calendar">calendar</div>
+        </div>
+    </section>
+    <section class="main-todolist">
+        <div class="main-nav-header">
+            <div class="main-nav-header__time">
+                <span class="main-nav-header__date js-dateContainer"></span>
+            </div>
+            <div class="main-nav-header__search">
+                <input class="main-nav-header__input" type="text" placeholder="Input task">
+            </div>
+        </div>
+        <div class="todo__Body">
+            <div class="todo__task">
+                <ul class="todo__list">
+                    <div class="todo__task-title">To Do</div>
+                    <li>
+                        <span>dkdkdkd</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="todo__done">
+                <ul class="todo__list">
+                    <div class="todo__task-title">Done!</div>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="main-calendar">
+        <div class="main-nav-header">
+            <div class="main-nav-header__time">
+                <span class="main-nav-header__date js-dateContainer"></span>
+            </div>
+            <div class="main-nav-header__search">
+                <span class="main-nav-header__backToDo"> go to todolist </span>
+            </div>
+        </div>
+        <div class="calendar__body">
+            <div class="calendar__calendar">
+                <div class="month-indicator">
+                    <span>February 2021</span>
+                </div>
+                <div class="day-week">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="calendar-grid">
+                    <button>
+                        <time datetime="2021-02-01">1</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-02">2</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-03">3</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-04">4</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-05">5</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-06">6</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-07">7</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-08">8</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-09">9</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-10">10</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-11">11</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-12">12</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-13">13</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-14">14</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-15">15</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-16">16</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-17">17</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-18">18</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-19">19</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-20">20</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-21">21</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-22">22</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-23">23</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-24">24</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-25">25</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-26">26</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-27">27</time>
+                    </button>
+                    <button>
+                        <time datetime="2021-02-28">28</time>
+                    </button>
+                </div>
+            </div>
+            <div class="calendar__orderList">
+                <div class="orderList__title">title</div>
+                <div class="orderList__content">
+                    <ul>
+                        <li>
+                            <div class="orderList__content__each">
+                                <span>deadline</span>
+                                <span>content</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-weather">
+        <div class="main-nav-header">
+            <div class="main-nav-header__time">
+                <span class="main-nav-header__date js-dateContainer"></span>
+            </div>
+            <div class="main-nav-header__search">
+                <input class="main-nav-header__input" type="text" placeholder="input location">
+            </div>
+        </div>
+        <div class="weather__body">
+            <div class="weather__today"></div>
+            <div class="weahter__after">
+                <div class="weather__after__1"></div>
+                <div class="weather__after__2"></div>
+                <div class="weather__after__3"></div>
+                <div class="weather__after__4"></div>
+                <div class="weather__after__5"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="src/js/time.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/todo.js"></script>
+</body>
+
+</html>

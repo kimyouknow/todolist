@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&display=swap");
+
+@import "reset.css";
+@import "variable.css";
+/* components */
+@import "component/section.css";
+@import "component/main_nav.css";
+@import "component/todoList.css";
+@import "component/weather.css";
+@import "component/calendar.css";
+
+/* screnn */
+@import "screen/enter.css";
+* {
+  font-family: "Lora", serif;
+  text-decoration: none;
+}
+body {
+  margin: 0 auto;
+  width: 950px;
+}
