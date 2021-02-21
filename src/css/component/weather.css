@@ -11,6 +11,27 @@
   width: 50%;
   height: 100%;
   border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weather__today__location {
+  margin-top: 80px;
+  margin-bottom: 12px;
+  font-size: var(--small-font);
+  font-weight: var(--semi-bold-font);
+}
+.weather__today__summary {
+  font-size: var(--mise-font);
+  margin-bottom: 12px;
+}
+.weather__today__tempNow {
+  margin-bottom: 12px;
+  font-size: var(--largest-font);
+  font-weight: var(--semi-bold-font);
+}
+.weather__today__tempHL span {
+  margin: 0 4px;
 }
 .weahter__after {
   width: 40%;

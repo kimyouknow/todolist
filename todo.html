@@ -45,8 +45,8 @@
         </div>
         <div class="main-nav__navigation js-navigation">
             <div class="navigation__todolist js-nav__toDo">toDoList</div>
-            <div class="navigation__weather js-nav__weather">weather</div>
-            <div class="navigation__calendar js-nav__calendar">calendar</div>
+            <div class="navigation__weather js-nav__weather">calendar</div>
+            <div class="navigation__calendar js-nav__calendar">weather</div>
         </div>
     </section>
     <section class="main-todolist">
@@ -209,7 +209,21 @@
             </div>
         </div>
         <div class="weather__body">
-            <div class="weather__today"></div>
+            <div class="weather__today js-weatherToday">
+                <div class="weather__today__location js-weather-location">
+                    
+                </div>
+                <div class="weather__today__summary js-weather-summary">
+                    
+                </div>
+                <div class="weather__today__tempNow js-weather-tempNow">
+                    
+                </div>
+                <div class="weather__today__tempHL js-weather-tempHL">
+                    <span class="js-weather-high"></span>
+                    <span class="js-weather-low"></span>
+                </div>
+            </div>
             <div class="weahter__after">
                 <div class="weather__after__1"></div>
                 <div class="weather__after__2"></div>
@@ -220,6 +234,7 @@
         </div>
     </section>
 
+    <script src="src/js/weather.js"></script>
     <script src="src/js/time.js"></script>
     <script src="src/js/main.js"></script>
     <script src="src/js/todo.js"></script>

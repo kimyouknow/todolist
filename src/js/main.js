@@ -20,12 +20,13 @@ function scrolldown(e){
         case 'toDoList':
             window.scrollTo({top:1000, left: 0, behavior: 'smooth'});
             break
-        case 'weather':
+        case 'calendar':
             window.scrollTo({top:2000, left: 0, behavior: 'smooth'});
             break
-        case 'calendar':
+        case 'weather':
             window.scrollTo({top:3000, left: 0, behavior: 'smooth'});
             break
+        
     }
 }
 
