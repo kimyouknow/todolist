@@ -1,4 +1,5 @@
 const dateContainer = document.querySelectorAll(".js-dateContainer");
+const clock = document.querySelector(".js-clock");
 
 function getDate(){
     const week = new Array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
@@ -16,9 +17,18 @@ function getDate(){
     });
     };
 
-
+function getTime(){
+    const getTime = new Date();
+    const hour = getTime.getHours();
+    const minute = getTime.getMinutes();
+    const second = getTime.getSeconds();
+    clock.innerHTML = `${hour < 10 ? `0${hour}` : hour}:
+    ${minute < 10 ? `0${minute}` : minute}:
+    ${second < 10 ? `0${second}` : second}`;
+}
 function init() {
     getDate();
-    
+    getTime();
+    setInterval(getTime, 1000);
 }
 init();

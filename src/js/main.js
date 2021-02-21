@@ -7,6 +7,7 @@ const navigation = document.querySelector(".js-navigation"),
     nav__calendar = navigation.querySelector(".js-nav__calendar");
 
 const backHome = document.querySelector(".js-backToHome");
+const backToDo = document.querySelector(".js-backToDoList");
 
 function getName() {
     const LS_name = localStorage.getItem('name');
@@ -27,18 +28,22 @@ function scrolldown(e){
             break
     }
 }
-function moveScorll() {
-    nav__toDo.addEventListener("click", scrolldown);
-    nav__weather.addEventListener("click", scrolldown);
-    nav__calendar.addEventListener("click", scrolldown);
-}
+
 function scrollHigh() {
     window.scrollTo({top:0, left: 0, behavior: 'smooth'});
 }
 
-function upperHome() {
-    backHome.addEventListener("click", scrollHigh);
+function scrolToDo(){
+    window.scrollTo({top:1000, left: 0, behavior: 'smooth'});
 }
+function moveScorll() {
+    nav__toDo.addEventListener("click", scrolldown);
+    nav__weather.addEventListener("click", scrolldown);
+    nav__calendar.addEventListener("click", scrolldown);
+    backHome.addEventListener("click", scrollHigh);
+    backToDo.addEventListener("click", scrolToDo);
+}
+
 function hadnleSCroll(e){
     let scrolY = window.scrollY;
     if (scrolY > 500) {
@@ -50,7 +55,6 @@ function hadnleSCroll(e){
 function init() {
     getName();
     moveScorll();
-    upperHome();
     window.addEventListener("scroll", hadnleSCroll);
     
 }

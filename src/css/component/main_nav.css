@@ -31,9 +31,13 @@
 }
 .main-nav-header__input {
   border-style: none;
-  width: 40%;
+  width: 80%;
   height: 40px;
   font-size: var(--small-font);
+}
+.todoInput,
+.todoDeadline {
+  width: 40%;
 }
 .main-nav-header__input:focus {
   outline: 0;
@@ -60,6 +64,7 @@
 }
 .navigation__todolist,
 .navigation__calendar,
-.navigation__weather:hover {
+.navigation__weather,
+.backToDoList:hover {
   cursor: pointer;
 }

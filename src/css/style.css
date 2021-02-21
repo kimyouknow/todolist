@@ -8,6 +8,7 @@
 @import "component/todoList.css";
 @import "component/weather.css";
 @import "component/calendar.css";
+@import "component/clock.css";
 
 /* screnn */
 @import "screen/enter.css";
