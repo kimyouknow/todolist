@@ -44,7 +44,7 @@ function handleGeoSuccess(position){
 }
 
 function handleGeoError() {
-    console.log("can't access geo location");
+    alert("can't access geo location");
 }
 
 function askForCoords(){
