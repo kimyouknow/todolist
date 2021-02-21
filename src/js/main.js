@@ -1,3 +1,4 @@
+const body = document.querySelector("body");
 const localName = document.querySelector(".js-localName");
 
 const navigation = document.querySelector(".js-navigation"),
@@ -38,10 +39,19 @@ function scrollHigh() {
 function upperHome() {
     backHome.addEventListener("click", scrollHigh);
 }
+function hadnleSCroll(e){
+    let scrolY = window.scrollY;
+    if (scrolY > 500) {
+        backHome.classList.add("show");
+    } else {
+        backHome.classList.remove("show");
+    }
+}
 function init() {
     getName();
     moveScorll();
     upperHome();
-
+    window.addEventListener("scroll", hadnleSCroll);
+    
 }
 init();

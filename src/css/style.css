@@ -19,3 +19,6 @@ body {
   margin: 0 auto;
   width: 950px;
 }
+.show {
+  display: block;
+}

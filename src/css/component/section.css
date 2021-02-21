@@ -27,6 +27,7 @@
   padding: 8px;
   margin: 12px 4px;
   z-index: 2;
+  display: none;
 }
 
 .backToHome:hover {
