@@ -31,3 +31,31 @@
   border-radius: 12px;
   margin-bottom: 24px;
 }
+.todoInput {
+  margin-left: 18px;
+}
+.main-nav-header__input__button {
+  border: none;
+  border-radius: 50%;
+  font-size: var(--small-font);
+  background-color: white;
+}
+@keyframes rotatePlus {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: none;
+  }
+}
+.main-nav-header__input__button:hover {
+  cursor: pointer;
+}
+
+.main-nav-header__input__button:focus {
+  outline: none;
+  animation: rotatePlus 0.8s ease-in-out;
+}

@@ -53,21 +53,20 @@
             <div class="main-nav-header__time">
                 <span class="main-nav-header__date js-dateContainer"></span>
             </div>
-            <div class="main-nav-header__search">
-                <input class="main-nav-header__input" type="text" placeholder="Input task">
-            </div>
+            <form class="main-nav-header__search js-toDoForm">
+                <input class="main-nav-header__input todoInput js-inputToDo" type="text" placeholder="Input task">
+                <input class="main-nav-header__input todoDeadline js-inputDeadline" type="date">
+                <button class="main-nav-header__input__button js-inputBtn"><i class="fas fa-plus"></i></button>
+            </form>
         </div>
         <div class="todo__Body">
             <div class="todo__task">
-                <ul class="todo__list">
+                <ul class="todo__list js-todoList">
                     <div class="todo__task-title">To Do</div>
-                    <li>
-                        <span>dkdkdkd</span>
-                    </li>
                 </ul>
             </div>
             <div class="todo__done">
-                <ul class="todo__list">
+                <ul class="todo__list js-doneList">
                     <div class="todo__task-title">Done!</div>
                     <li></li>
                 </ul>
