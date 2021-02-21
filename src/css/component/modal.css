@@ -1,0 +1,27 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 42%;
+  left: 26%;
+  z-index: 20;
+  border-radius: 12px;
+  width: 50%;
+  height: 220px;
+  padding: 16px;
+  display: none;
+}
+.modal-body h4 {
+  font-size: var(--small-font);
+  margin-bottom: 8px;
+}
+.modal-body span {
+  display: block;
+  margin-bottom: 8px;
+}
+.modal-body input {
+  border-style: none;
+  width: 100%;
+}
+.modal-body input:focus {
+  outline: 0;
+}

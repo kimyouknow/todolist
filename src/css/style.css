@@ -3,12 +3,13 @@
 @import "reset.css";
 @import "variable.css";
 /* components */
-@import "component/section.css";
 @import "component/main_nav.css";
 @import "component/todoList.css";
 @import "component/weather.css";
 @import "component/calendar.css";
 @import "component/clock.css";
+@import "component/section.css";
+@import "component/modal.css";
 
 /* screnn */
 @import "screen/enter.css";

@@ -42,21 +42,28 @@ section {
   padding: 200px 120px;
   position: relative;
 }
+
 /* container */
 .container {
   width: 50%;
 }
-.container_ul {
+.container__ul {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
+
 .container__ul a {
+  width: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 20%;
+  padding-top: 4px;
+  margin: 8px;
+}
+.container__ul a:hover {
+  cursor: pointer;
+  background-color: antiquewhite;
 }
 .container__img {
   border: 1px solid;
@@ -67,16 +74,22 @@ section {
   align-items: center;
   border-radius: 50%;
   margin-bottom: 8px;
+  background-color: white;
 }
 .container__img img {
   width: 38px;
   height: 38px;
   border-radius: 50%;
+  background-color: white;
 }
 .container__img-span {
-  width: 100%;
+  width: 80%;
   padding: 6px;
   text-align: center;
   border: 1px solid;
   border-radius: 5px;
+  background-color: white;
+}
+.container__img-shortadd span {
+  font-size: calc(var(--mise-font) * 0.8);
 }
