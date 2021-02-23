@@ -56,6 +56,7 @@ function addToToDo(object){
 function deleteTask(e){
     const li = e.target.parentNode;
     li.parentNode.removeChild(li);
+    console.log(li);
     removeFromToDo(li.id);
     removeFromDone(li.id);
     saveState();

@@ -12,18 +12,22 @@
 </head>
 
 <body>
-    <div class="modal">
-        <div class="modal-body">
+    <div class="modal js-modal">
+        <form class="modal-body js-modal__form">
             <h4>Add address</h4>
             <div class="modal__addressName">
                 <span>name</span>
-                <input type="text">
+                <input class="js-modal__name" type="text">
             </div>
             <div class="modal__addressURL">
                 <span>URL</span>
-                <input type="text">
+                <input class="js-modal__url" type="text">
             </div>
-        </div>
+            <div class="modal__button">
+                <button class="modal__cancelBtn js-modal__cancel">취소</button>
+                <button class="modal__doneBtn js-modal__done">완료</button>
+            </div>
+        </form>
     </div>
     <div class="localName js-localName">
         <div class="localName__img">
@@ -39,53 +43,43 @@
             <div class="main-nav-header__time">
                 <span class="main-nav-header__date js-dateContainer js-dateContainer"></span>
             </div>
-            <div class="main-nav-header__search">
-                <i class="fas fa-search"></i>
-                <input class="main-nav-header__input" type="text" placeholder="Google search">
-            </div>
+            <form class="main-nav-header__search main-nav__googleSearch js-searchForm">
+                <ul>
+                    <li>
+                        <i class="fas fa-search js-searchIcon"></i>
+                        <input class="main-nav-header__input js-searchFormInput" type="text" placeholder="Google search">
+                    </li>
+                    <li>
+                        <i class="far fa-clock"></i>
+                        <span></span>
+                        
+                    </li>
+                </ul>
+            </form>
         </div>
         <div class="container">
-            <ul class="container__ul">
-                <a href="#">
-                    <div class="container__img">
-                        
-                    </div>
-                    <div class="container__img-span">
-                        <span>naver</span>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="container__img">
-                        
-                    </div>
-                    <div class="container__img-span">
-                        <span>naver</span>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="container__img">
-                        
-                    </div>
-                    <div class="container__img-span">
-                        <span>naver</span>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="container__img">
-                        
-                    </div>
-                    <div class="container__img-span">
-                        <span>naver</span>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="container__img">
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="container__img-span container__img-shortadd">
-                        <span>add</span>
-                    </div>
-                </a>
+            <ul class="container__ul js-container__ul">
+                <li>
+                    <a href="https://www.naver.com/">
+                        <div class="container__img">
+                            
+                        </div>
+                        <div class="container__img-span">
+                            <span>naver</span>
+                        </div>
+                    </a>
+                    <button class="js-container__x">✖</button>
+                </li>
+                <li>
+                    <a href="#" class="js-addButton">
+                        <div class="container__img">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="container__img-span container__img-shortadd">
+                            <span>add</span>
+                        </div>
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="main-nav__navigation js-navigation">
@@ -99,7 +93,7 @@
             <div class="main-nav-header__time">
                 <span class="main-nav-header__date js-dateContainer"></span>
             </div>
-            <form class="main-nav-header__search js-toDoForm">
+            <form class=" main-nav js-toDoForm">
                 <input class="main-nav-header__input todoInput js-inputToDo" type="text" placeholder="Input task">
                 <input class="main-nav-header__input todoDeadline js-inputDeadline" type="date">
                 <button class="main-nav-header__input__button js-inputBtn"><i class="fas fa-plus"></i></button>
@@ -279,6 +273,8 @@
         </div>
     </section>
 
+    <script src="src/js/search.js"></script>
+    <script src="src/js/modal.js"></script>
     <script src="src/js/weather.js"></script>
     <script src="src/js/time.js"></script>
     <script src="src/js/main.js"></script>

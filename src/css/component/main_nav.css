@@ -23,12 +23,24 @@
 .main-nav-header__search {
   border: 1px solid;
   border-radius: 20px;
+  width: 70%;
+  height: 42px;
+  padding: 2px 0;
+}
+.main-nav-header__search li {
+  margin-bottom: 12px;
+  display: none;
+}
+.main-nav-header__search li:first-child {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 70%;
-  padding: 2px 0;
 }
+.main-nav__googleSearch:focus-within {
+  height: 500px;
+  z-index: 3;
+}
+
 .main-nav-header__input {
   border-style: none;
   width: 80%;

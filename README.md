@@ -38,8 +38,7 @@
 1. main nav( clone chrome main )
 
 - google search
-- add bookmark btn
-- add bookmark modal
+- add img
 
 2. todolist
 3. calendar

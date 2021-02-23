@@ -26,7 +26,6 @@ function scrolldown(e){
         case 'weather':
             window.scrollTo({top:3000, left: 0, behavior: 'smooth'});
             break
-        
     }
 }
 

@@ -52,15 +52,19 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
+.container__ul li {
+  width: 20%;
+  position: relative;
+  margin: 8px;
+}
 
 .container__ul a {
-  width: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 4px;
-  margin: 8px;
 }
+
 .container__ul a:hover {
   cursor: pointer;
   background-color: antiquewhite;
@@ -92,4 +96,23 @@ section {
 }
 .container__img-shortadd span {
   font-size: calc(var(--mise-font) * 0.8);
+}
+.js-container__x {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  border: none;
+  font-size: calc(var(--mise-font) * 0.8);
+  padding: 2px 4px;
+  border-radius: 8px;
+  opacity: 0;
+}
+.js-container__x:hover {
+  opacity: 1;
+  cursor: pointer;
+  background-color: antiquewhite;
+}
+.js-container__x:focus {
+  outline: none;
 }
